@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Please enter your username below:</h4>
+      
+      <input type="text" class="form-control" [(ngModel)]="userName" />
+      
+      <label>Username: {{ userName }}</label>
+      
+      <div>
+        <button class="btn btn-primary" [disabled]="userName === ''" (click)="userName = ''">
+          Reset Username
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
