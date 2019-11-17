@@ -1,2 +1,7 @@
-<p>{{ 'server' }} with ID {{ serverID }} is {{ getServerStatus() }}</p>
-
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <p [ngStyle]="{backgroundColor: getColor()}">{{ 'Server' }} with ID {{ serverID }} is {{ getServerStatus()}}.</p>
+    </div>
+  </div>
+</div>
